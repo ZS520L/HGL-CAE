@@ -58,7 +58,7 @@ X = torch.from_numpy(X_scaled.astype(np.float32))
 dim = n_features
 units = 4  # 设定为预期的簇数
 sef = 1
-init_mode = 'randn'
+init_mode = 'normal'
 
 # 初始化 HGL 模型
 hgl = HGL(dim=dim, units=units, sef=sef, init_mode=init_mode)
